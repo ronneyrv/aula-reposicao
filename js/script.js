@@ -34,4 +34,35 @@ function exercicio4() {
 
 }
 
-exercicio4();
+function exercicio3() {
+    `
+    Questão 3: Escreva um script que verifica se um número é divisível por 5 e por 3 ao mesmo 
+    tempo e exiba uma mensagem informando o resultado da verificação:
+    Possíveis mensagens: "O número xx é divisível por 5, mas não é divisível por 3", "O número xx 
+    é divisível por 3, mas não é divisível por 5", O número xx é divisível por 5 e por 3."'
+    `
+    let numero = prompt('Insira um número:');
+
+    if (numero % 5 == 0 && numero % 3 == 0 ) {
+
+        alert(`O número ${numero} é divisível por 5 e por 3.`)
+
+    } else if (numero % 5 == 0 && numero % 3 !== 0) {
+
+        alert(`O número ${numero} é divisível por 5, mas não é divisível por 3`)
+
+    } else if (numero % 5 !== 0 && numero % 3 == 0) {
+
+        alert(`O número ${numero} é divisível por 3, mas não é divisível por 5`)
+
+    } else if (numero % 5 !== 0 && numero % 3 !== 0) {
+
+        alert(`O número ${numero} não é divisível por 5 e por 3.`)
+    }
+
+};
+
+exercicio3();
+
+
+//https://dontpad.com/fs18/js
